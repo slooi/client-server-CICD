@@ -10,9 +10,10 @@
     "dev-prod": "concurrently \"npm run dev-prod1\" \"npm run dev-prod2\"",
     "dev-prod1": "concurrently \"tsc --watch --p tsconfig.server.json\" \"nodemon ./dist_server/server\"",
     "dev-prod2": "tsc-watch --onSuccess \"vite build\"",
-    "build": "tsc && vite build",
+    "dev-prod0": "npm run build-client && npm run build-server && npm start",
+    "build-client": "tsc && vite build",
     "build-server": "tsc --p tsconfig.server.json",
-    "prod": "npm run build && npm run build-server && npm start",
+    "build": "npm run build-client && npm run build-server",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
