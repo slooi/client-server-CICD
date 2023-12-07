@@ -1,3 +1,5 @@
+# ⚠ RAN INTO ISSUES UUSING THIS FOR MISSION 3 DUE TO TYPE:MODULE in package.json (make sure both test and built version work)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
